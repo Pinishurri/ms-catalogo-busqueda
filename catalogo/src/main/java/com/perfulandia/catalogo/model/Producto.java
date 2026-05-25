@@ -43,7 +43,7 @@ public class Producto {
 
     // Precio del producto, no puede ser negativo ni cero
     @NotNull(message = "El precio no puede estar vacio")
-    @DecimalMin(value = "0.1", message = "El precio debe ser mayor a cero")
+    @DecimalMin(value = "0.0", message = "El precio debe ser mayor a cero")
     @Column(nullable = false)
     private Double precio;
 }
